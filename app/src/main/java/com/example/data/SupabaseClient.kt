@@ -20,7 +20,7 @@ import retrofit2.http.*
 interface SupabaseAuthApi {
     @POST("signup")
     suspend fun signUp(
-        @Body body: SupabaseAuthRequest
+        @Body body: SupabaseSignUpRequest
     ): SupabaseAuthResponse
 
     @POST("token")

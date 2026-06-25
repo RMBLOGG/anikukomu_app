@@ -10,6 +10,12 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class SupabaseAuthRequest(
     val email: String,
+    val password: String
+)
+
+@JsonClass(generateAdapter = true)
+data class SupabaseSignUpRequest(
+    val email: String,
     val password: String,
     val data: Map<String, String>? = null
 )

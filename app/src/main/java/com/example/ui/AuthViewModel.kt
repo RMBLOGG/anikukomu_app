@@ -210,7 +210,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                     "display_name" to username
                 )
                 client.authApi.signUp(
-                    body = SupabaseAuthRequest(
+                    body = SupabaseSignUpRequest(
                         email = email,
                         password = password,
                         data = metadata
