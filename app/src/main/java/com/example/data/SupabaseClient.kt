@@ -265,8 +265,8 @@ class SupabaseClient(private val context: Context) {
         .addLast(KotlinJsonAdapterFactory())
         .build()
 
-    private val supabaseUrl = BuildConfig.SUPABASE_URL.removeSuffix("/") + "/"
-    private val anonKey = BuildConfig.SUPABASE_ANON_KEY
+    private val supabaseUrl = "https://sfyyljfpnutskeenlysb.supabase.co/"
+    private val anonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNmeXlsamZwbnV0c2tlZW5seXNiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNDAzNTcsImV4cCI6MjA5NzcxNjM1N30.Qaecy5q6GyI_pbG-LgtzqXJrTtu6AXMshA20P20n2pc" 
 
     private val baseOkHttpClient: OkHttpClient by lazy {
         val logging = HttpLoggingInterceptor().apply {
